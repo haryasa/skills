@@ -1,0 +1,45 @@
+{
+  "skill_name": "article-reader",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "hey can you read this and tell me what it's about? also is it worth my time reading the full thing? https://paulgraham.com/ds.html",
+      "expected_output": "Structured brief with TL;DR, key takeaways including specifics like 'do things that don't scale', actionable advice for founders, and an honest read recommendation (likely SKIM or READ FULLY since it's a well-regarded short essay)",
+      "files": [],
+      "expectations": [
+        "Output contains a TL;DR section",
+        "Output contains Key Takeaways as bullet points",
+        "Output contains a Read Recommendation with SKIP, SKIM, or READ FULLY verdict",
+        "Key Takeaways include specific examples or advice from the article (not vague generalities)",
+        "Output includes the article title or source attribution"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "summarize this article for me and tell me if i need to read it:\n\n---\nTitle: The Science of Why You're Always Tired\nSource: Harvard Health Publishing\n\nMillions of people feel exhausted despite sleeping 7-8 hours a night. Researchers at Harvard Medical School have identified three overlooked factors that drain energy even when sleep duration is adequate.\n\nThe first is light exposure. A 2023 study of 12,000 adults found that people who got morning sunlight within 30 minutes of waking had 23% higher reported energy levels throughout the day compared to those who stayed indoors. The mechanism: morning light suppresses residual melatonin and anchors the circadian clock.\n\nThe second factor is meal timing. Eating within a 10-hour window — say, 8am to 6pm — was associated with a 31% reduction in self-reported afternoon fatigue in a Stanford trial of 500 participants. Researchers believe this is related to how the liver's internal clock syncs with the brain's master clock.\n\nThe third is 'social jet lag' — the mismatch between your weekday and weekend sleep schedule. Every hour of difference between your weekday wake time and weekend wake time adds roughly 6 minutes of afternoon fatigue, per a study in Current Biology.\n\nThe good news: all three are adjustable without medication. Dr. Andrew Huberman of Stanford calls morning sunlight 'the single most powerful free tool for resetting your energy.' Sleep researcher Matthew Walker recommends a consistent wake time as 'the anchor for the entire circadian system.'\n\nFor most people, fatigue isn't about how much they sleep — it's about when and how they anchor their day.\n---",
+      "expected_output": "Structured brief with TL;DR covering the 3 energy-drain factors, stats (23%, 31%, 6 min per hour), actionable advice (morning light, meal timing, consistent wake time), quotes from Huberman and Walker, and a read recommendation (likely SKIP since the summary captures everything)",
+      "files": [],
+      "expectations": [
+        "Output contains a TL;DR section",
+        "Output contains Stats & Data section with specific numbers from the article (23%, 31%)",
+        "Output contains Actionable Advice section",
+        "Output contains Notable Quotes section with the Huberman or Walker quote",
+        "Read Recommendation verdict is present and explicitly says SKIP, SKIM, or READ FULLY",
+        "Output does not fetch a URL — it uses the pasted content directly"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "what are the main points of this? https://paulgraham.com/hwh.html — i'm trying to figure out if there's anything actionable in it",
+      "expected_output": "Structured brief on Paul Graham's 'How to Do Great Work' essay, with key takeaways, specific actionable advice, possibly recommended references to other thinkers or works mentioned, and honest read recommendation reflecting the article's length and depth",
+      "files": [],
+      "expectations": [
+        "Output contains a TL;DR section",
+        "Output contains Key Takeaways as bullet points with specific ideas from the article",
+        "Output contains Actionable Advice section given the user specifically asked about actionable content",
+        "Read Recommendation includes a verdict (SKIP, SKIM, or READ FULLY)",
+        "Output is structured with section headers matching or close to the defined format"
+      ]
+    }
+  ]
+}
